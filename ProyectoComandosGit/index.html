@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comandos Git</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+
   <body>
     <header>
-      <h1>Comandos Básicos de Git</h1>
+      <h1>
+        <i class="fab fa-git-alt" style="margin-right: 10px"></i>Comandos
+        Básicos de Git
+      </h1>
     </header>
 
     <main class="container">
@@ -44,6 +52,10 @@
             preparación.
           </li>
           <li>
+            <strong>git restore --staged .</strong>: Quita archivos del área de
+            preparación manteniendo los cambios en el código.
+          </li>
+          <li>
             <strong>git commit -m "mensaje"</strong>: Guarda los cambios con un
             mensaje.
           </li>
@@ -62,10 +74,69 @@
           </li>
         </ul>
       </section>
-    </main>
 
-    <footer>
-      <p>Creado por BAI - 2025</p>
+      <section>
+        <h2>Trabajo con Ramas</h2>
+        <ul>
+          <li>
+            <strong>git branch mi-rama</strong>: Crea una nueva rama llamada
+            <strong>mi-rama</strong>.
+          </li>
+          <li>
+            <strong>git switch mi-rama</strong>: Cambiamos de la rama actual a
+            la rama <strong>mi-rama</strong>.
+          </li>
+          <li>
+            <strong>git switch -c mi-rama</strong>: Crea la rama y cambia de
+            ubicacion a la rama creada.
+          </li>
+          <li>
+            <strong>git fetch</strong>: Verifica las ramas remotas que hay sin
+            traer tal cual los cambios
+          </li>
+          <li>
+            <strong>git merge mi-otra-rama</strong>: Incorpora los cambios de la
+            rama <strong>mi-otra-rama</strong> a la rama actual.
+          </li>
+          <li>
+            <strong>git branch --delete mi-rama</strong>: Borra la rama
+            <strong>mi-rama</strong> siempre y cuando halla sido fusionada
+            previamente.
+          </li>
+          <li>
+            <strong>git branch -D mi-rama</strong>: Borra la rama
+            <strong>mi-rama</strong> sin importarle si sido fusionada
+            previamente.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <section class="resource">
+      <h2>Recursos adicionales</h2>
+      <ul>
+        <li>
+          <a href="https://git-scm.com/doc" target="_blank"
+            >Documentación oficial de Git</a
+          >
+        </li>
+        <li>
+          <a href="https://learngitbranching.js.org/" target="_blank"
+            >Simulador visual de Git</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; 2025 BAI. Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+          <a href="/about">Acerca de</a>
+          <a href="/privacy">Política de privacidad</a>
+          <a href="/contact">Contacto</a>
+        </nav>
+        <p class="footer-note">Sitio desarrollado con fines académicos.</p>
+      </div>
     </footer>
   </body>
 </html>
