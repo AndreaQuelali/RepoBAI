@@ -59,10 +59,15 @@ header h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section {
+  margin-bottom: 30px;
+}
+
 h1 {
   color: #24292e;
   margin-left: 30px;
 }
+
 h2 {
   color: #24292e;
 }
@@ -72,6 +77,12 @@ section p {
   margin: 10px 0;
   padding: 10px;
   border-left: 5px solid #0366d6;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #dcdcdc;
 }
 
 footer {
@@ -98,7 +109,7 @@ footer {
 }
 
 .footer-nav a {
-  color: #ccc;
+  color: #eee;
   margin: 0 10px;
   text-decoration: none;
   transition: color 0.3s ease;
