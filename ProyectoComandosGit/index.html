@@ -1,108 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comandos Git</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Comandos Git</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
+  <body>
+    <header>
+      <h1>
+        <i class="fab fa-git-alt" style="margin-right: 10px"></i>Comandos
+        Básicos de Git
+      </h1>
+    </header>
 
-<body>
-  <header>
-    <h1><i class="fab fa-git-alt" style="margin-right: 10px;"></i>Comandos Básicos de Git</h1>
-  </header>
+    <main class="container">
+      <section>
+        <h2>Configuración</h2>
+        <ul>
+          <li>
+            <strong>git config --global user.name "Tu Nombre"</strong>:
+            Configura tu nombre de usuario.
+          </li>
+          <li>
+            <strong>git config --global user.email "tu@email.com"</strong>:
+            Configura tu correo electrónico.
+          </li>
+        </ul>
+      </section>
 
-  <main class="container">
-    <section>
-      <h2>Configuración</h2>
+      <section>
+        <h2>Inicialización y Estado</h2>
+        <ul>
+          <li><strong>git init</strong>: Inicializa un nuevo repositorio.</li>
+          <li>
+            <strong>git status</strong>: Muestra el estado de los archivos.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Control de Cambios</h2>
+        <ul>
+          <li>
+            <strong>git add .</strong>: Agrega todos los archivos al área de
+            preparación.
+          </li>
+          <li>
+            <strong>git restore --staged .</strong>: Quita archivos del área de
+            preparación manteniendo los cambios en el código.
+          </li>
+          <li>
+            <strong>git commit -m "mensaje"</strong>: Guarda los cambios con un
+            mensaje.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Trabajo con Repositorios Remotos</h2>
+        <ul>
+          <li><strong>git clone URL</strong>: Clona un repositorio remoto.</li>
+          <li>
+            <strong>git push</strong>: Envía tus cambios al repositorio remoto.
+          </li>
+          <li>
+            <strong>git pull</strong>: Trae los cambios del repositorio remoto.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Trabajo con Ramas</h2>
+        <ul>
+          <li>
+            <strong>git branch mi-rama</strong>: Crea una nueva rama llamada
+            <strong>mi-rama</strong>.
+          </li>
+          <li>
+            <strong>git switch mi-rama</strong>: Cambiamos de la rama actual a
+            la rama <strong>mi-rama</strong>.
+          </li>
+          <li>
+            <strong>git switch -c mi-rama</strong>: Crea la rama y cambia de
+            ubicacion a la rama creada.
+          </li>
+          <li>
+            <strong>git fetch</strong>: Verifica las ramas remotas que hay sin
+            traer tal cual los cambios
+          </li>
+          <li>
+            <strong>git merge mi-otra-rama</strong>: Incorpora los cambios de la
+            rama <strong>mi-otra-rama</strong> a la rama actual.
+          </li>
+          <li>
+            <strong>git branch --delete mi-rama</strong>: Borra la rama
+            <strong>mi-rama</strong> siempre y cuando halla sido fusionada
+            previamente.
+          </li>
+          <li>
+            <strong>git branch -D mi-rama</strong>: Borra la rama
+            <strong>mi-rama</strong> sin importarle si sido fusionada
+            previamente.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <section class="resource">
+      <h2>Recursos adicionales</h2>
       <ul>
         <li>
-          <strong>git config --global user.name "Tu Nombre"</strong>:
-          Configura tu nombre de usuario.
+          <a href="https://git-scm.com/doc" target="_blank"
+            >Documentación oficial de Git</a
+          >
         </li>
         <li>
-          <strong>git config --global user.email "tu@email.com"</strong>:
-          Configura tu correo electrónico.
+          <a href="https://learngitbranching.js.org/" target="_blank"
+            >Simulador visual de Git</a
+          >
         </li>
       </ul>
     </section>
-
-    <section>
-      <h2>Inicialización y Estado</h2>
-      <ul>
-        <li><strong>git init</strong>: Inicializa un nuevo repositorio.</li>
-        <li>
-          <strong>git status</strong>: Muestra el estado de los archivos.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Control de Cambios</h2>
-      <ul>
-        <li>
-          <strong>git add .</strong>: Agrega todos los archivos al área de
-          preparación.
-        </li>
-        <li>
-          <strong>git restore --staged .</strong>: Quita archivos del área de
-          preparación manteniendo los cambios en el código.
-        </li>
-        <li>
-          <strong>git commit -m "mensaje"</strong>: Guarda los cambios con un
-          mensaje.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Trabajo con Repositorios Remotos</h2>
-      <ul>
-        <li><strong>git clone URL</strong>: Clona un repositorio remoto.</li>
-        <li>
-          <strong>git push</strong>: Envía tus cambios al repositorio remoto.
-        </li>
-        <li>
-          <strong>git pull</strong>: Trae los cambios del repositorio remoto.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Trabajo con Ramas</h2>
-      <ul>
-        <li><strong>git branch mi-rama</strong>: Crea una nueva rama llamada
-          <strong>mi-rama</strong>.
-        </li>
-        <li>
-          <strong>git switch mi-rama</strong>: Cambiamos de la rama actual a la rama
-          <strong>mi-rama</strong>.
-        </li>
-        <li>
-          <strong>git switch -c mi-rama</strong>: Crea la rama y cambia de ubicacion a
-          la rama creada.
-        </li>
-        <li>
-          <strong>git fetch</strong>: Verifica las ramas remotas que hay sin traer tal
-          cual los cambios
-        </li>
-        <li>
-          <strong>git merge mi-otra-rama</strong>: Incorpora los cambios de la rama
-          <strong>mi-otra-rama</strong> a la rama actual.
-        </li>
-        <li>
-          <strong>git branch --delete mi-rama</strong>: Borra la rama
-          <strong>mi-rama</strong> siempre y cuando halla sido fusionada previamente.
-        </li>
-        <li>
-          <strong>git branch -D mi-rama</strong>: Borra la rama
-          <strong>mi-rama</strong> sin importarle si sido fusionada previamente.
-        </li>
-      </ul>
-    </section>
-  </main>
 
   <footer class="site-footer">
     <div class="footer-container">
